@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket       = "vini-terraform-clc14"
+    bucket       = "adriano-terraform-clc14"
     key          = "network/terraform.tfstate"
     region       = "us-east-1"
     use_lockfile = true
