@@ -1,12 +1,12 @@
 variable "vpc_name" {
   type    = string
-  default = "vpc-terraform"
+  default = "vpc-terraform-V2"
 }
 
 resource "aws_vpc" "minha_vpc" {
   cidr_block       = "10.0.0.0/16"
   instance_tenancy = "default"
-
+ 
   tags = {
     Name = var.vpc_name
   }
